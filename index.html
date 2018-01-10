@@ -3,8 +3,8 @@
   <head>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script type="js/jquery.js"></script>
-    <script type="js/scripts.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/scripts.js"></script>
     <meta charset="utf-8">
     <title> BAWS CALCULATOR </title>
   </head>
@@ -15,13 +15,18 @@
       </div>
     </div>
     <div class="container-flex">
-      <div class="row">
+      <div class="row formRow">
         <div class="col-md-12">
           <form class="inputForm">
             <div class="form-group">
               <input type="text" class="form-control inputField">
             </div>
           </form>
+        </div>
+      </div>
+      <div class="row displayRow">
+        <div class="col-md-12">
+          <p class="displayRowContainer"></p>
         </div>
       </div>
       <div class="row">
@@ -48,7 +53,7 @@
           </div>
         </div>
         <div class="col-md-3">
-          <div class="calcButton calcDigit calcDivide">
+          <div class="calcButton calcOp calcDivide">
             <p>/</p>
           </div>
         </div>
@@ -70,7 +75,7 @@
           </div>
         </div>
         <div class="col-md-3">
-          <div class="calcButton calcDigit calcMultiply">
+          <div class="calcButton calcOp calcMultiply">
             <p>x</p>
           </div>
         </div>
@@ -92,7 +97,7 @@
           </div>
         </div>
         <div class="col-md-3">
-          <div class="calcButton calcDigit calcMinus">
+          <div class="calcButton calcOp calcMinus">
             <p>-</p>
           </div>
         </div>
@@ -109,12 +114,12 @@
           </div>
         </div>
         <div class="col-md-3">
-          <div class="calcButton calcDigit calcEqual">
+          <div class="calcButton calcEqual">
             <p>=</p>
           </div>
         </div>
         <div class="col-md-3">
-          <div class="calcButton calcDigit calcAdd">
+          <div class="calcButton calcOp calcAdd">
             <p>+</p>
           </div>
         </div>
